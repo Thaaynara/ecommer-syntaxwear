@@ -1,13 +1,46 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SyntaxWear</title>
-  <link rel="icon" href="./imagens/favicons/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SyntaxWear</title>
+    <link rel="icon" href="./imagens/favicons/favicon.ico">
 </head>
+
 <body>
-  <h1>Bem-vindo ao projeto SyntaxWear</h1>
-  <p>Pasta de imagens: <code>imagens/</code> com <code>favicons/</code> e <code>icons/</code>.</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#" aria-label="SyntaxWear">SyntaxWear</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#categories">Shoes</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Hero section"></section>
+
+        <section class="categories" aria-label="Shoe categories"></section>
+
+        <section class="featured" aria-label="Featured products">
+            <div class="products-grid" role="list"></div>
+        </section>
+    </main>
+
+    <footer aria-label="Footer with contact info and links">
+        <div class="container footer-inner">
+            <div class="footer-contact"></div>
+            <nav aria-label="Footer links">
+                <ul></ul>
+            </nav>
+        </div>
+    </footer>
 </body>
+
 </html>
