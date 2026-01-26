@@ -1,0 +1,141 @@
+/* reset.css — baseado no reset moderno do Andy Bell
+Inspirado em técnicas modernas: box-sizing global, remoção de margens
+imagens responsivas, inputs herdando fontes e suporte a prefers-reduced-motion.
+*/
+
+/* Box sizing mais previsível */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Altura base para layouts que dependem de 100% */
+:where(html, body) {
+    height: 100%;
+}
+
+/* Remover margens e paddings padrões */
+:where(html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend, table, caption,
+    tbody, tfoot, thead, tr, th, td, article, aside,
+    canvas, details, embed, figure, figcaption, footer,
+    header, hgroup, menu, nav, output, ruby, section,
+    summary, time, mark, audio, video) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+/* Elementos semânticos do HTML5 como blocos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+/* Body padrão */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    background: transparent;
+    color: inherit;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Listas */
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links sem decoração por padrão */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Imagens e mídia responsiva */
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Form controls herdam fontes e cores */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Preservar conteúdo pré-formatado */
+pre,
+code,
+kbd,
+samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Ubuntu Mono", monospace;
+    font-size: 1em;
+}
+
+/* Acessibilidade: reduzir animações quando preferido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Manter estilos de foco visíveis por padrão (acessibilidade) */
+:where(:focus) {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+}
+
+/* Pequenas melhorias tipográficas opcionais */
+:where(body) {
+    text-wrap: balance;
+}
