@@ -60,6 +60,7 @@
 @media (max-width: 768px){
     .hero-section{
         height: 660px;
+        background-image: url(../../imagens/banners/hero-mobile.jpg);
     }
 
     .hero-overlay{
@@ -71,7 +72,7 @@
     }
 
     .hero-content .hero-subtitle{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .hero-content{

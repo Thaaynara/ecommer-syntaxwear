@@ -85,7 +85,7 @@
         "model sneaker-silver"
         "sneaker-purple sneaker-purple";
         max-width: 100%;
-        gap: 0.625px;
+        gap: 10px;
     }
 
     .highlight{
